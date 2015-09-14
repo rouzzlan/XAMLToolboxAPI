@@ -1,4 +1,4 @@
-package layoutElements;
+package layoutElements.Grid;
 
 import org.jdom2.Element;
 
@@ -7,6 +7,5 @@ import org.jdom2.Element;
  */
 public interface GridFormable {
     void createGridLayout();
-
     void addContentToGrid(Element element, int row, int column);
 }
