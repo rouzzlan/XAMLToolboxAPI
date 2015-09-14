@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="XAMLToolboxAPI:jar">
+    <output-path>$PROJECT_DIR$/out</output-path>
+    <root id="archive" name="XAMLToolboxAPI.jar">
+      <element id="module-output" name="XAMLToolboxAPI" />
+      <element id="extracted-dir" path="$USER_HOME$/Dropbox/Tools/jaxen-1.1.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Dropbox/Tools/jdom-2.0.5.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
