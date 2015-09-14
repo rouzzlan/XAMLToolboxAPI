@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by rouslankhayaouri on 14/09/15 time 13:06.
  */
-public class ConfiguredGrid {
+public class OuterGrid implements GridFormable {
     private Element root;
     private boolean isRowDefinitionSet =false;
     private boolean isColumnDefinitionSet =false;
@@ -29,10 +29,13 @@ public class ConfiguredGrid {
         }
     }
 
+    @Override
     public void createGridLayout(){
         root.addContent(createGridColumnDefinitions());
         root.addContent(createGridRowDefinitions());
     }
+
+    @Override
     public void addContentToGrid(Element element, int row, int column){
         if (isColumnDefinitionSet && isRowDefinitionSet){
             element.setAttribute("Grid.Row", Integer.toString(row));
